@@ -1,1 +1,1 @@
-web: gunicorn proyectoHeroku1.wgsi
+web: gunicorn proyectoHeroku1.wgsi --log-file -
