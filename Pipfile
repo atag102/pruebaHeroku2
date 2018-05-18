@@ -3,3 +3,4 @@ python_full_version = "3.6.5"
 [packages]
 django-heroku = "*"
 flag = "*"
+whitenoise = "*"
