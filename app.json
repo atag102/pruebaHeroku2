@@ -1,5 +1,11 @@
 {
   "name": "pruebaHeroku2",
   "description": "Esta aplicacion es para practicar heroku",
-  "keywords": ["Python","Django","heroku"]
+  "keywords": ["Python","Django","heroku"],
+  "env": {
+  "DISABLE_COLLECTSTATIC": {
+    "description": "Don't run python manage.py collectstatic --noinput on deploy",
+    "value": "1"
+  }
+}
 }
