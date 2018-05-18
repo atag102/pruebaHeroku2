@@ -1,0 +1,1 @@
+web: gunicorn proyectoHeroku1.wgsi
