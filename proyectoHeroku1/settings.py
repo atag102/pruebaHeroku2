@@ -92,8 +92,16 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    },
+    'students':{
+        'ENGINE': 'django.db.backends.dummy'
     }
 }
+from mongoengine import connect
+MONGO_DATABASE_NAME = 'BDPI'
+MONGO_HOST = 'localhost'
+MONGO_PORT = 27017
+connect(MONGO_DATABASE_NAME, host=MONGO_HOST, port=MONGO_PORT)
 
 db_from_env = dj_database_url.config(conn_max_age=500)  
 DATABASES['default'].update(db_from_env)  
