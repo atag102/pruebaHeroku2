@@ -14,7 +14,6 @@ import os
 import django_heroku
 import dj_database_url  
 
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -41,10 +40,6 @@ SECRET_KEY = '6ogtpn=munvgrf92h3)ylj7bp523^ghz@*e5tbgrx!4%_94jq@'
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
-
-db_from_env = dj_database_url.config(conn_max_age=500)  
-DATABASES['default'].update(db_from_env)  
-
 
 # Application definition
 
